@@ -21,7 +21,7 @@ import ch.swissonid.design_lib_sample.fragments.BaseFragment;
 import ch.swissonid.design_lib_sample.fragments.FlexibleSpaceWithImageFragment;
 import ch.swissonid.design_lib_sample.fragments.FlexibleSpaceFragment;
 import ch.swissonid.design_lib_sample.fragments.StandardAppBarFragment;
-import ch.swissonid.design_lib_sample.fragments.TabFragment;
+import ch.swissonid.design_lib_sample.fragments.tabs.TabHolderFragment;
 import ch.swissonid.design_lib_sample.util.LogUtils;
 import ch.swissonid.design_lib_sample.util.Navigator;
 
@@ -155,7 +155,7 @@ public class DrawerActivity extends AppCompatActivity implements DrawerLayout.Dr
                 setNewRootFragment(StandardAppBarFragment.newInstance());
                 break;
             case R.id.tabs_menu_item:
-                setNewRootFragment(TabFragment.newInstance());
+                setNewRootFragment(TabHolderFragment.newInstance());
                 break;
 
             case R.id.parallax_menu_item:
